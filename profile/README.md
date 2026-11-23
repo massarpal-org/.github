@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/massar-org/.github/main/profile/logo.png" width="140" alt="Massar IT">
+<img src="logo.png" width="140" alt="Massar IT">
 
 # IT & Database Department
 ### Massar Association for Relief & Development

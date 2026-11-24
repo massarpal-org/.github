@@ -1,0 +1,36 @@
+name: 🐞 Bug report
+description: Something isn't working as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "⚠️ Do not include real beneficiary data or passwords. Use dummy data or blurred screenshots."
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Web, Android, API, Database, Infrastructure]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Briefly describe the problem
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open...\n2. Click on...\n3. See error..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or error messages

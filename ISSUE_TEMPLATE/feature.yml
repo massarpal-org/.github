@@ -1,0 +1,29 @@
+name: ✨ Feature request
+description: A new idea or improvement
+labels: [feature]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Web, Android, API, Database, Infrastructure]
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem or need does this solve?
+      description: Who needs it and why?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: When is it done?
+      placeholder: "- Staff can...\n- The report shows..."

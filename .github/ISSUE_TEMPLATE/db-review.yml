@@ -1,0 +1,44 @@
+name: 🗄️ Database Review
+description: Report an issue or suggest an improvement to the database
+labels: [area:database]
+body:
+  - type: markdown
+    attributes:
+      value: "⚠️ Do not include real beneficiary data. Use fake examples only."
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options: [Performance, Data Integrity, Security, Design, Data Quality]
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options: [🔴 High - affects operations now, 🟡 Medium, 🟢 Improvement]
+    validations:
+      required: true
+  - type: input
+    id: tables
+    attributes:
+      label: Affected tables
+      placeholder: "beneficiaries, distributions"
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What did you notice, and why is it a problem?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: You can include proposed SQL here
+      render: sql
+  - type: textarea
+    id: risk
+    attributes:
+      label: Impact of the change
+      description: Does it require downtime? Does it modify existing data? Does it affect the application?
